@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.multithreading.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MULTI THREADING" />
+
+    <Button
+        android:id="@+id/btnThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="executeThreads"
+        android:text="Thread" />
+
+    <Button
+        android:id="@+id/btnRunnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="executeThreads"
+        android:text="Runnable" />
+
+    <Button
+        android:id="@+id/btnAsynchronous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="executeThreads"
+        android:text="Async" />
+    <Button
+        android:id="@+id/btnThreadHandelerMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="executeThreads"
+        android:text="Using Thread and Handeler Message" />
+    <TextView
+        android:text="0"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tvCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="0"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tvRunnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="0"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tvAsyncTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
